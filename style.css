@@ -1,0 +1,101 @@
+body {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 750px;
+    height: 564px;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+
+.card {
+    background-color: blueviolet;
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-left {
+    width: 50%;
+    background-color: red;
+    padding-right: 40px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size:contain;
+}
+
+.card-right {
+    width: 50%;
+    background-color: white;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-right .tag {
+    color: hsl(228, 12%, 48%);
+    margin-top: 40px;
+}
+
+.card-right h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    width: 80%;
+}
+
+.card-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 30px; 
+    color: hsl(228, 12%, 48%);
+    width: 90%;
+}
+
+.card-right .preço {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.card-right .preçoDesconto {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+}
+
+.card-right .preçoOriginal {
+    font-size: 15px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-right button {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 89%;
+    padding: 20px;
+    border-radius: 10px;
+    border: transparent;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.5s ease;
+}
+
+button img {
+    width: 20px;
+}
+
+
+.card-right button:hover {
+    cursor: pointer;
+    background-color:hsl(212, 21%, 14%);
+}  
